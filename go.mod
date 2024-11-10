@@ -161,7 +161,7 @@ require (
 	google.golang.org/protobuf v1.33.0
 	gopkg.in/jcmturner/goidentity.v3 v3.0.0
 	gotest.tools/gotestsum v1.10.0
-	honnef.co/go/tools v0.4.3
+	honnef.co/go/tools v0.4.7
 	k8s.io/api v0.27.2
 	k8s.io/apimachinery v0.27.2
 	k8s.io/client-go v0.27.2
