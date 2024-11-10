@@ -164,7 +164,7 @@ require (
 	k8s.io/client-go v0.27.2
 	k8s.io/utils v0.0.0-20230220204549-a5ecb0141aa5
 	layeh.com/radius v0.0.0-20230922032716-6579be8edf5d
-	mvdan.cc/gofumpt v0.3.1
+	mvdan.cc/gofumpt v0.7.0
 	sigs.k8s.io/yaml v1.3.0
 )
 
