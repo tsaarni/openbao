@@ -13,3 +13,20 @@ updates:
     directory: "/ui"
     schedule:
       interval: "weekly"
+    # Until there is capacity to review UI updates, disable PRs so they don't block other updates.
+    open-pull-requests-limit: 0
+  - package-ecosystem: "gomod"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+  # Keep the release branch up to date with patch updates.
+  - target-branch: release/2.0.x
+    package-ecosystem: "gomod"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    ignore:
+    - dependency-name: "*"
+      update-types:
+      - "version-update:semver-major"
+      - "version-update:semver-minor"
