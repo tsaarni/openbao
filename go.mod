@@ -162,8 +162,8 @@ require (
 	gopkg.in/jcmturner/goidentity.v3 v3.0.0
 	gotest.tools/gotestsum v1.10.0
 	honnef.co/go/tools v0.4.3
-	k8s.io/api v0.27.2
-	k8s.io/apimachinery v0.27.2
+	k8s.io/api v0.27.16
+	k8s.io/apimachinery v0.27.16
 	k8s.io/client-go v0.27.2
 	k8s.io/utils v0.0.0-20230220204549-a5ecb0141aa5
 	layeh.com/radius v0.0.0-20230922032716-6579be8edf5d
