@@ -25,7 +25,7 @@ jobs:
     steps:
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
       - name: "Run scanner"
-        uses: google/osv-scanner-action/osv-scanner-action@cbb0295db259bba04d38625792c18646ed18bc89 # v1.9.1
+        uses: google/osv-scanner-action/osv-scanner-action@c411404a6c37528d821d2851028dd3856bebe8b9 # v1.9.1
         with:
           scan-args: |-
             --output=results.json
@@ -33,7 +33,7 @@ jobs:
             --recursive
         continue-on-error: true
       - name: "Run osv-scanner-reporter"
-        uses: google/osv-scanner-action/osv-reporter-action@cbb0295db259bba04d38625792c18646ed18bc89 # v1.9.1
+        uses: google/osv-scanner-action/osv-reporter-action@c411404a6c37528d821d2851028dd3856bebe8b9 # v1.9.1
         with:
           scan-args: |-
             --output=${{ inputs.results-file-name }}
