@@ -160,7 +160,7 @@ require (
 	google.golang.org/grpc/cmd/protoc-gen-go-grpc v1.1.0
 	google.golang.org/protobuf v1.33.0
 	gopkg.in/jcmturner/goidentity.v3 v3.0.0
-	gotest.tools/gotestsum v1.10.0
+	gotest.tools/gotestsum v1.10.1
 	honnef.co/go/tools v0.4.3
 	k8s.io/api v0.27.2
 	k8s.io/apimachinery v0.27.2
