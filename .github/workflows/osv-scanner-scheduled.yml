@@ -1,0 +1,50 @@
+name: OSV-Scanner Scheduled Scan
+
+on:
+  schedule:
+    - cron: "30 12 * * 1"
+  # Allow manual triggering
+  workflow_dispatch:
+
+permissions:
+  # Required to upload SARIF file.
+  actions: read
+  # Require writing security events to upload SARIF file to security tab.
+  security-events: write
+  # Only need to read contents.
+  contents: read
+
+jobs:
+  osv-scan-scheduled:
+    strategy:
+      matrix:
+        branches:
+          - main
+          - release/2.0.x
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+      - name: "Run scanner"
+        uses: google/osv-scanner-action@19ec1116569a47416e11a45848722b1af31a857b # v1.9.0
+        with:
+          scan-args: |-
+            --output=results.json
+            --format=json
+            ${{ inputs.scan-args }}
+        continue-on-error: true
+      - name: "Run osv-scanner-reporter"
+        uses: google/osv-scanner-action/osv-reporter-action@19ec1116569a47416e11a45848722b1af31a857b # v1.9.0
+        with:
+          scan-args: |-
+            --output=${{ inputs.results-file-name }}
+            --new=results.json
+            --gh-annotations=false
+      - name: "Upload SARIF file"
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: results.sarif
+      - name: "Error troubleshooter"
+        if: ${{ always() && steps.upload_artifact.outcome == 'failure' }}
+        run: |
+          echo "::error::Artifact upload failed. This is most likely caused by a error during scanning earlier in the workflow."
+          exit 1
