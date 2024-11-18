@@ -115,12 +115,12 @@ require (
 	github.com/openbao/go-kms-wrapping/wrappers/azurekeyvault/v2 v2.1.0
 	github.com/openbao/go-kms-wrapping/wrappers/gcpckms/v2 v2.1.0
 	github.com/openbao/go-kms-wrapping/wrappers/ocikms/v2 v2.1.0
-	github.com/openbao/go-kms-wrapping/wrappers/transit/v2 v2.1.0
+	github.com/openbao/go-kms-wrapping/wrappers/transit/v2 v2.2.0
 	github.com/openbao/openbao-template v1.0.0
 	github.com/openbao/openbao/api/auth/approle/v2 v2.0.0
 	github.com/openbao/openbao/api/auth/userpass/v2 v2.0.0
 	github.com/openbao/openbao/api/v2 v2.0.1
-	github.com/openbao/openbao/sdk/v2 v2.0.0
+	github.com/openbao/openbao/sdk/v2 v2.0.1
 	github.com/ory/dockertest/v3 v3.10.0
 	github.com/patrickmn/go-cache v2.1.0+incompatible
 	github.com/pires/go-proxyproto v0.6.1
