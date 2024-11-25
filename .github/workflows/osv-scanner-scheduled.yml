@@ -34,7 +34,7 @@ jobs:
         run: |
           echo "GoVersionOverride = \"$(go env GOVERSION)\"" > osv-scanner.toml
       - name: "Run scanner"
-        uses: google/osv-scanner-action/osv-scanner-action@cbb0295db259bba04d38625792c18646ed18bc89 # v1.9.1
+        uses: google/osv-scanner-action/osv-scanner-action@daa2c68f50d845057895a9c300e42478481c1d26 # v1.9.1
         with:
           scan-args: |-
             --output=results.json
@@ -43,7 +43,7 @@ jobs:
             $(find . -name go.mod)
         continue-on-error: true
       - name: "Run osv-scanner-reporter"
-        uses: google/osv-scanner-action/osv-reporter-action@cbb0295db259bba04d38625792c18646ed18bc89 # v1.9.1
+        uses: google/osv-scanner-action/osv-reporter-action@daa2c68f50d845057895a9c300e42478481c1d26 # v1.9.1
         with:
           scan-args: |-
             --output=results.sarif
