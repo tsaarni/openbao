@@ -108,19 +108,19 @@ require (
 	github.com/natefinch/atomic v0.0.0-20150920032501-a62ce929ffcc
 	github.com/oklog/run v1.1.0
 	github.com/okta/okta-sdk-golang/v2 v2.20.0
-	github.com/openbao/go-kms-wrapping/v2 v2.1.0
+	github.com/openbao/go-kms-wrapping/v2 v2.2.0
 	github.com/openbao/go-kms-wrapping/wrappers/aead/v2 v2.1.0
 	github.com/openbao/go-kms-wrapping/wrappers/alicloudkms/v2 v2.1.0
 	github.com/openbao/go-kms-wrapping/wrappers/awskms/v2 v2.1.0
 	github.com/openbao/go-kms-wrapping/wrappers/azurekeyvault/v2 v2.1.0
 	github.com/openbao/go-kms-wrapping/wrappers/gcpckms/v2 v2.1.0
 	github.com/openbao/go-kms-wrapping/wrappers/ocikms/v2 v2.1.0
-	github.com/openbao/go-kms-wrapping/wrappers/transit/v2 v2.1.0
+	github.com/openbao/go-kms-wrapping/wrappers/transit/v2 v2.3.0
 	github.com/openbao/openbao-template v1.0.0
 	github.com/openbao/openbao/api/auth/approle/v2 v2.0.0
 	github.com/openbao/openbao/api/auth/userpass/v2 v2.0.0
-	github.com/openbao/openbao/api/v2 v2.0.1
-	github.com/openbao/openbao/sdk/v2 v2.0.0
+	github.com/openbao/openbao/api/v2 v2.1.0
+	github.com/openbao/openbao/sdk/v2 v2.1.0
 	github.com/ory/dockertest/v3 v3.10.0
 	github.com/patrickmn/go-cache v2.1.0+incompatible
 	github.com/pires/go-proxyproto v0.6.1
@@ -143,14 +143,14 @@ require (
 	go.opentelemetry.io/otel/trace v1.19.0
 	go.uber.org/atomic v1.11.0
 	go.uber.org/goleak v1.2.1
-	golang.org/x/crypto v0.24.0
+	golang.org/x/crypto v0.29.0
 	golang.org/x/exp v0.0.0-20240604190554-fc45aab8b7f8
-	golang.org/x/net v0.26.0
+	golang.org/x/net v0.31.0
 	golang.org/x/oauth2 v0.21.0
-	golang.org/x/sync v0.7.0
-	golang.org/x/sys v0.21.0
-	golang.org/x/term v0.21.0
-	golang.org/x/text v0.16.0
+	golang.org/x/sync v0.9.0
+	golang.org/x/sys v0.27.0
+	golang.org/x/term v0.26.0
+	golang.org/x/text v0.20.0
 	golang.org/x/tools v0.22.0
 	google.golang.org/api v0.149.0
 	google.golang.org/grpc v1.62.1
