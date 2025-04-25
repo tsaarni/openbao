@@ -7080,12 +7080,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ember__service@npm:*, @types/ember__service@npm:^4.0.1":
+"@types/ember__service@npm:*":
   version: 4.0.1
   resolution: "@types/ember__service@npm:4.0.1"
   dependencies:
     "@types/ember__object": "*"
   checksum: f4b8c161e13148d6fa3930a4fcd80e454aad1bb2688ec2c2da6cbb9b6e20a8c3b78308dfa10cb4ec5c42696ca77930d7133093d3c2cf8f41c883d456e2d444cf
+  languageName: node
+  linkType: hard
+
+"@types/ember__service@npm:^4.0.9":
+  version: 4.0.9
+  resolution: "@types/ember__service@npm:4.0.9"
+  dependencies:
+    "@types/ember__object": "*"
+  checksum: 1459e93f13a019a5d824349642aa39b7b7e1ddb6970f04592076b2c1f2027a98f43acf5bda20874cfe45821f8731e982abeff0f09bed6f00bdc468ba1ee28dfd
   languageName: node
   linkType: hard
 
@@ -28081,7 +28090,7 @@ __metadata:
     "@types/ember__polyfills": ^4.0.1
     "@types/ember__routing": ^4.0.12
     "@types/ember__runloop": ^4.0.2
-    "@types/ember__service": ^4.0.1
+    "@types/ember__service": ^4.0.9
     "@types/ember__string": ^3.0.10
     "@types/ember__template": ^4.0.1
     "@types/ember__test": ^4.0.1
