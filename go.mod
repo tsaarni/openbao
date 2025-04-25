@@ -95,7 +95,7 @@ require (
 	github.com/mattn/go-isatty v0.0.20
 	github.com/mediocregopher/radix/v4 v4.1.4
 	github.com/mholt/acmez/v3 v3.0.1
-	github.com/michaelklishin/rabbit-hole/v3 v3.1.0
+	github.com/michaelklishin/rabbit-hole/v3 v3.2.0
 	github.com/mikesmitty/edkey v0.0.0-20170222072505-3356ea4e686a
 	github.com/mitchellh/cli v1.1.5
 	github.com/mitchellh/copystructure v1.2.0
