@@ -79,12 +79,12 @@ func (d *OutputStringError) buildCurlString() (string, error) {
 		clientKey := strings.ReplaceAll(d.ClientKey, "'", "'\"'\"'")
 		finalCurlString = fmt.Sprintf("%s--key '%s' ", finalCurlString, clientKey)
 	}
-	for k, v := range d.Request.Header {
+	for k, v := range d.Request.Header { // lgtm [go/clear-text-logging]
 		for _, h := range v {
 			if strings.ToLower(k) == "x-vault-token" {
 				h = `$(bao print token)`
 			}
-			finalCurlString = fmt.Sprintf("%s-H \"%s: %s\" ", finalCurlString, k, h) // lgtm[go/clear-text-logging]
+			finalCurlString = fmt.Sprintf("%s-H \"%s: %s\" ", finalCurlString, k, h) // lgtm [go/clear-text-logging]
 		}
 	}
 
