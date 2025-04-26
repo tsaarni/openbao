@@ -28,11 +28,10 @@ type OutputStringError struct {
 
 func (d *OutputStringError) Error() string {
 	if d.finalCurlString == "" {
-		cs, err := d.buildCurlString()
+		_, err := d.buildCurlString()
 		if err != nil {
 			return err.Error()
 		}
-		d.finalCurlString = cs
 	}
 
 	return ErrOutputStringRequest
