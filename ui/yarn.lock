@@ -6856,12 +6856,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ember-data__model@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@types/ember-data__model@npm:4.0.0"
+"@types/ember-data__model@npm:^4.0.5":
+  version: 4.0.5
+  resolution: "@types/ember-data__model@npm:4.0.5"
   dependencies:
     "@types/ember-data": "*"
-  checksum: 6a46583608af66018c9ce88d2d3cbe21f5526f479f9a442d3d3a0ab69f282437b8478fbcca4bafa9236c9e5cbc4ffe7ddadd2e1a6a81d6b58ebe553011970485
+  checksum: 742eacaadeb57fd982ec3d1fd0b6ed269e7569422f416dd5ebf0aed809f71f60850dfb5de02f00ab62bc02b0c8ca52004d7795c3857b026c5e3e3c9dafd1582a
   languageName: node
   linkType: hard
 
@@ -28064,7 +28064,7 @@ __metadata:
     "@types/ember": ^4.0.2
     "@types/ember-data": ^4.4.6
     "@types/ember-data__adapter": ^4.0.1
-    "@types/ember-data__model": ^4.0.0
+    "@types/ember-data__model": ^4.0.5
     "@types/ember-data__serializer": ^4.0.1
     "@types/ember-data__store": ^4.0.2
     "@types/ember-qunit": ^5.0.2
