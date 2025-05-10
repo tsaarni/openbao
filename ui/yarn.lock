@@ -6673,6 +6673,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@simple-dom/document@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@simple-dom/document@npm:1.4.0"
+  dependencies:
+    "@simple-dom/interface": ^1.4.0
+  checksum: 5cb9b93079b0b01c461d4668829bf39986b032106fe3c337fbabecb43d19a37e6c5d6f2a938e8391aba4a50304367e9a59dccfe62320df4d77f7036ea09324c9
+  languageName: node
+  linkType: hard
+
 "@simple-dom/interface@npm:^1.4.0":
   version: 1.4.0
   resolution: "@simple-dom/interface@npm:1.4.0"
@@ -15431,12 +15440,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ember-page-title@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "ember-page-title@npm:7.0.0"
+"ember-page-title@npm:^9.0.1":
+  version: 9.0.1
+  resolution: "ember-page-title@npm:9.0.1"
   dependencies:
-    ember-cli-babel: ^7.26.6
-  checksum: 2533d6fa3aaeb37950f44dc8e50ce2e30008106fbded78136fb4bbfc8bc3240b24ccf0cfadb71154744b0483ae06a9d9b557edfbdbe397c0e8096448c76095ed
+    "@embroider/addon-shim": ^1.8.7
+    "@simple-dom/document": ^1.4.0
+  peerDependencies:
+    ember-source: ">= 4.2.0"
+  checksum: f6da2ee21de3beb9a9370e4497edf22df1c42d5bd3f3ab22be252e10459c72229c2fc950226d2cb35c7005c1e2005c9cea146467a157d8301d6a835eee6df6e4
   languageName: node
   linkType: hard
 
@@ -28142,7 +28154,7 @@ __metadata:
     ember-maybe-in-element: ^2.0.3
     ember-modal-dialog: ^4.1.5
     ember-modifier: ^3.1.0
-    ember-page-title: ^7.0.0
+    ember-page-title: ^9.0.1
     ember-power-select: 6.0.1
     ember-qrcode-shim: ^0.4.0
     ember-qunit: 6.0.0
