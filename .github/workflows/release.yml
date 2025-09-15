@@ -42,7 +42,7 @@ jobs:
       - setup
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.1.7
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0 # Required by GoRelease
 
@@ -120,7 +120,7 @@ jobs:
           df -h .
 
       - name: Checkout
-        uses: actions/checkout@v4.1.7
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0 # Required by GoRelease
 
