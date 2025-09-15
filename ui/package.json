@@ -174,7 +174,7 @@
     "filesize": "^4.2.1",
     "flat": "^6.0.1",
     "globals": "^16.0.0",
-    "jsondiffpatch": "^0.4.1",
+    "jsondiffpatch": "^0.7.3",
     "jsonlint": "^1.6.3",
     "lint-staged": "^15.4.1",
     "loader.js": "^4.7.0",
